@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just another layout</title>
+    <style>
+        body {
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        .main-content {
+            width: 65vw;
+            height: 100vh;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap; 
+        }
+        .main-content-item {
+            width: 64.5vw;
+            height: 90vh;
+            padding-top: 9.5vh;
+            background-color: black;
+            justify-content: center;
+            flex-direction: column;
+            align-content: stretch;
+            
+
+        }
+        .inner-content-bottom {
+            width: 64.5vw;
+            height: 10vh;
+            background-color: blue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        .inner-item-title {
+            width: 64.5vw;
+            height: 80vh;
+            background-color: chocolate;
+            position:relative;
+            display:flex;
+           
+        }
+        .inner-item-center {
+            height: 70vh;
+            width: 60vw;
+            background-color:cyan;
+            position: absolute;
+            top: 14.5vh;
+            left:20vw;
+        }
+        .inner-content-bottom-item-1 {
+            height: 10vh;
+            width: 16vw;
+            background-color: darkgreen;
+        }
+        .inner-content-bottom-item-2 {
+            height: 10vh;
+            width: 16vw;
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="main-content-item">
+            <div class="inner-item-title"></div>
+            <div class="inner-item-center"></div>
+            <div class="inner-content-bottom">
+             <div class="inner-content-bottom-item-1"></div>
+             <div class="inner-content-bottom-item-2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
